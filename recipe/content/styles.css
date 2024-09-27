@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: "SUSE", sans-serif;
+}
+
+header {
+    background: #9ec38f;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+ul, ol {
+    margin: 20px;
+}
+
+.recipe, .imagery, .recipe-websites, .design-websites {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.imagery img{
+    height: 350px;
+    width: auto;
+    
+}
