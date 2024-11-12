@@ -1,0 +1,255 @@
+header {
+    font-family: Arial, serif;
+    font-size: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("images/high-resolution-dark-grey-concrete-wall-texture-background-cement-wall-free-photo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid #ffffff;
+}
+
+.header-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.header-button i {
+    margin-right: 8px;
+}
+.header-buttons {
+    display: flex;
+    gap: 20px;
+}
+.header-button {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+
+main {
+    background-image: url("images/high-resolution-dark-grey-concrete-wall-texture-background-cement-wall-free-photo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: white; 
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: oblique;
+    font-size: 140px;
+    letter-spacing: 2px;
+    color: white; 
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.gallery{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 110px;
+}
+
+.scroll-container{
+    overflow: auto;
+    white-space: nowrap;
+    padding: 20px;
+}
+.for-gallery{
+    height: 400px;
+    width: auto;
+    object-fit: cover;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 200;
+    background-color: #19191a;
+    color: white;
+}
+
+h3 {
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #232428;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+    margin: auto; /* Center the grid */
+}
+
+.grid-item {
+    background-color: #232428; /* Dark background for grid items */
+    color: white; /* Text color for visibility */
+    text-align: center;
+}
+
+.grid-item:nth-child(4) {
+    background-color: #33353a;
+}
+.grid-item:nth-child(5) {
+    background-color: #50525c;
+}
+.grid-item:nth-child(8) {
+    background-color: #545962;
+}
+    
+
+.graffiti-image {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-item h3 {
+    font-size: 2em;
+    margin-top: 20%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.grid-item p {
+    font-size: 12px;
+    margin: 40px;
+}
+
+button {
+    background-color: #ffffff; /* Button color */
+    color: rgb(0, 0, 0); /* Button text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Button padding */
+    margin-bottom: 100px;
+    border-radius: 2px; /* Rounded button corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #cfcfcf; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.footer {
+    background-image: url("images/high-resolution-dark-grey-concrete-wall-texture-background-cement-wall-free-photo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; 
+    text-align: center;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    
+    header {
+        padding: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-buttons {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        /* position: absolute; */
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding-top: 20px;
+        /* z-index: 10; */
+    }
+
+
+    .header-buttons.show {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+        padding-top: 8px;
+    }
+
+    .header-title {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin: 0;
+        padding-top: 100px;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 100px;
+        letter-spacing: 2px;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 3 equal columns */
+        margin: auto; /* Center the grid */
+    }
+
+    .grid-item {
+        margin: 20px;
+    }
+    
+}
