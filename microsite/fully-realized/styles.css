@@ -116,6 +116,7 @@ h3 {
 }
 
 
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
@@ -132,10 +133,10 @@ h3 {
     background-color: #33353a;
 }
 .grid-item:nth-child(5) {
-    background-color: #50525c;
+    background-color: #494b54;
 }
 .grid-item:nth-child(8) {
-    background-color: #545962;
+    background-color: #4e535c;
 }
     
 
@@ -153,7 +154,7 @@ h3 {
 }
 
 .grid-item p {
-    font-size: 12px;
+    font-size: 14px;
     margin: 40px;
 }
 
@@ -173,6 +174,29 @@ button:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
 }
 
+.subtitle-container {
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+.text{
+    padding-top: 0px;
+    padding-bottom: 10px;
+    width: 60%;
+    text-align: left;
+    margin: auto;
+    line-height: 1.4;
+}
+
+.information h3 {
+    padding: 40px;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+}
+
 .footer {
     background-image: url("images/high-resolution-dark-grey-concrete-wall-texture-background-cement-wall-free-photo.jpg");
     background-attachment: fixed;
@@ -183,6 +207,31 @@ button:hover {
     padding: 40px 0;
     font-family: Arial, sans-serif;
     font-size: 14px;
+}
+
+.footer-text {
+    padding-top: 40px;
+}
+
+.footer-nav {
+    border-bottom: 2px solid #ffffff;
+    padding: 20px 0 20px 0;
+}
+
+.footer-nav ul li a {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    color: white;
+    line-height: 1;
+    text-decoration: none;
+    margin: 0 25px 0 25px;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
 }
 
 @media (max-width: 900px) {
